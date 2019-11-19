@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
+import Button from 'react-bootstrap/Button'
 
 export default class ResetButton extends Component {
     render() {
         return (
-            <button type="button" onClick={this.props.onClick}>
+            <Button variant="primary" size="lg" block onClick={this.props.onClick}>
                 Reset
-            </button>
+            </Button>
         )
     }
 }
