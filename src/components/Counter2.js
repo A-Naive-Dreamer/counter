@@ -54,12 +54,15 @@ export default function Counter2() {
     return (
         <Container fluid={true}>
             <Row>
-                <Col xs={{ span: 8 }} className="mx-auto">
-                    <h1 className="text-center text-success">
+                <Col xs={{ span: 8 }} className="mx-auto content">
+                    <h2 className="text-center text-primary">
+                        React Function Component
+                    </h2>
+                    <h3 className="text-center text-success">
                         Count: {state.count}
-                    </h1>
+                    </h3>
                 </Col>
-                <Col xs={{ span: 8 }} className="mx-auto">
+                <Col xs={{ span: 8 }} className="mx-auto content">
                     <Form>
                         <Form.Group>
                             <SubButton onClick={() => handleClick2()} />

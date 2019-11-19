@@ -44,12 +44,15 @@ export default class Counter extends Component {
         return (
             <Container fluid={true}>
                 <Row>
-                    <Col xs={{ span: 8 }} className="mx-auto">
-                        <h1 className="text-center text-primary">
+                    <Col xs={{ span: 8 }} className="mx-auto content">
+                        <h2 className="text-center text-primary">
+                            React Class Component
+                        </h2>
+                        <h3 className="text-center text-info">
                             Count: {this.state.count}
-                        </h1>
+                        </h3>
                     </Col>
-                    <Col xs={{ span: 8 }} className="mx-auto">
+                    <Col xs={{ span: 8 }} className="mx-auto content">
                         <Form>
                             <Form.Group>
                                 <SubButton onClick={() => this.handleClick2()} />

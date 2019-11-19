@@ -6,6 +6,9 @@ import Counter2 from './components/Counter2'
 function App() {
   return (
     <div>
+      <h1 className="text-center text-danger">
+        Counter
+      </h1>
       <Counter1 />
       <Counter2 />
     </div>
