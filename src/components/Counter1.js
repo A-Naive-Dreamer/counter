@@ -2,10 +2,12 @@ import React, { Component } from 'react'
 import AddButton from './AddButton'
 import ResetButton from './ResetButton'
 import SubButton from './SubButton'
-import Form from 'react-bootstrap/Form'
-import Container from 'react-bootstrap/Container'
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
+import {
+    Col,
+    Row,
+    Form,
+    Container,
+} from 'react-bootstrap'
 
 export default class Counter extends Component {
     constructor(props) {
@@ -44,7 +46,12 @@ export default class Counter extends Component {
         return (
             <Container fluid={true}>
                 <Row>
-                    <Col xs={{ span: 8 }} className="mx-auto content">
+                    <Col
+                        xs={{
+                            span: 8
+                        }}
+                        className="mx-auto content"
+                    >
                         <h2 className="text-center text-primary">
                             React Class Component
                         </h2>
@@ -52,7 +59,12 @@ export default class Counter extends Component {
                             Count: {this.state.count}
                         </h3>
                     </Col>
-                    <Col xs={{ span: 8 }} className="mx-auto content">
+                    <Col
+                        xs={{
+                            span: 8
+                        }}
+                        className="mx-auto content"
+                    >
                         <Form>
                             <Form.Group>
                                 <SubButton onClick={() => this.handleClick2()} />
